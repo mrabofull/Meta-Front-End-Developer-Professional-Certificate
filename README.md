@@ -1,4 +1,4 @@
-# Meta Front-End Professional Certificate Portfolio
+# Meta Front-End Professional Certificate
 
 A comprehensive collection of projects and assignments completed during the Meta Front-End Professional Certificate program. This repository showcases my journey learning modern web development practices from Meta's industry experts.
 
