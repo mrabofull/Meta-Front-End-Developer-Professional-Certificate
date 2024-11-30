@@ -87,3 +87,54 @@ const getRandomNum = function() {
 function getRandomNum() {
   return Math.floor(Math.random() *10) + 1
 };
+
+// ---------------------------------------------------
+
+// Expressions as props
+
+
+// Example 1
+const bool = false; 
+
+function Example(props) {
+    return (
+        <h2>The value of the toggleBoolean prop is: {props.toggleBoolean.toString()}</h2>
+    );
+};
+
+export default function App() { 
+    return ( 
+        <div className="App"> 
+            <Example toggleBoolean={!bool} /> 
+        </div> 
+    ); 
+};
+
+
+// Example 2
+const bool1 = false;
+const str1 = "just";
+
+function Example(props) {
+    return (
+        <div>
+            <h2>
+                The value of the toggleBoolean prop is:{props.toggleBoolean.toString()}
+            </h2>
+            <p>The value of the math prop is: <em>{props.math}</em></p>
+            <p>The value of the str prop is: <em>{props.str}</em></p>
+        </div>
+    );
+};
+
+export default function App() {
+    return (
+        <div className="App">
+            <Example
+                toggleBoolean={!bool1}
+                math={(10 + 20) / 3}
+                str={str1 + ' another ' + 'string'}
+            />
+        </div>
+    );
+};
