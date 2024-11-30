@@ -92,7 +92,6 @@ function getRandomNum() {
 
 // Expressions as props
 
-
 // Example 1
 const bool = false; 
 
