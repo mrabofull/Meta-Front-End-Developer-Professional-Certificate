@@ -1,5 +1,3 @@
-import { getDefaultNormalizer } from "@testing-library/react";
-import def from "ajv/dist/vocabularies/discriminator";
 import { useReducer } from "react";
 
 const reducer = (state, action) => {
