@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galaxy Explorer</title>
+
+  <style>
+    * {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: #121212;
+      color: #E0E0E0;
+    }
+
+    a:link {
+      color: #00bcd4;
+    }
+
+    a:visited {
+      color: #673ab7;
+    }
+
+    a:hover {
+      color: #4caf50;
+    }
+
+    a:active {
+      color: #fff;
+      background-color: #ff5722;
+    }
+
+    .hover-effect {
+      padding: 10px;
+      margin: 10px;
+      border: 1px solid #fff;
+    }
+
+    .hover-effect:hover {
+      box-shadow: 0 0 15px #ff9800;
+    }
+
+    .menu-container {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      background-color: #1e1e2f;
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    .section-title {
+      text-align: center;
+      color: #ffeb3b;
+      font-size: 1.5em;
+      margin: 10px 0;
+      border-bottom: 2px solid #ff9800;
+    }
+
+    .item {
+      margin: 20px;
+      padding: 10px;
+      border: 1px solid #757575;
+      border-radius: 8px;
+      background-color: #212121;
+      width: 200px;
+      text-align: center;
+    }
+
+    .item .label {
+      font-weight: bold;
+      color: #03a9f4;
+    }
+
+    .item .description {
+      font-style: italic;
+      margin-top: 5px;
+    }
+
+    .price {
+      color: #ff5722;
+      font-size: 1.2em;
+      float: right;
+    }
+
+    .low {
+      color: #4caf50;
+    }
+
+    .label + .low {
+      font-size: 1.1em;
+    }
+
+    .item ~ .item {
+      border-color: #9c27b0;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h1 style="text-align: center; color: #ff9800;">Galaxy Explorer</h1>
+  </div>
+
+  <div class="menu-container">
+    <div class="section">
+      <h2 class="section-title">Planets</h2>
+      <div class="item">
+        <div class="label">Mars</div>
+        <b class="price">$5M</b>
+        <div class="description">A red planet with stunning views.</div>
+      </div>
+      <div class="item">
+        <div class="label">Venus</div>
+        <b class="price low">$3M</b>
+        <div class="description">Explore the hottest planet.</div>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2 class="section-title">Spaceships</h2>
+      <div class="item">
+        <div class="label">Falcon Z</div>
+        <b class="price">$50M</b>
+        <div class="description">A sleek and powerful spaceship.</div>
+      </div>
+      <div class="item">
+        <div class="label">Galaxy Cruiser</div>
+        <b class="price">$75M</b>
+        <div class="description">Perfect for intergalactic travel.</div>
+      </div>
+    </div>
+  </div>
+
+  <p class="hover-effect">
+    <a href="#">Book Your Space Adventure Today!</a>
+  </p>
+</body>
+</html>
