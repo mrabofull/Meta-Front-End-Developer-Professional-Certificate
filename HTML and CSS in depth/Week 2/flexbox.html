@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fitness Activity Tracker</title>
+  <style>
+    /* Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    /* Container for the whole page */
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color: #f0f0f0;
+      min-height: 100vh;
+    }
+
+    /* Animated flex bars for activity data */
+    .activity-bar {
+      display: flex;
+      justify-content: space-between;
+      width: 80%;
+      margin: 20px 0;
+    }
+
+    .bar {
+      width: 22%;
+      text-align: center;
+      padding: 10px;
+      border-radius: 8px;
+      color: #fff;
+      transition: transform 2s;
+    }
+
+    .cardio { background-color: #FF8C00; }
+    .strength { background-color: #32CD32; }
+    .yoga { background-color: #8A2BE2; }
+    .running { background-color: #DC143C; }
+
+    /* Skew and rotate on hover */
+    .bar:hover {
+      transform: rotate(10deg) skew(10deg);
+    }
+
+    /* Fitness stats */
+    .stats {
+      display: flex;
+      width: 80%;
+      justify-content: space-between;
+      margin-top: 50px;
+    }
+
+    .stat {
+      width: 22%;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      text-align: center;
+      font-size: 1.5em;
+    }
+
+    .stat p {
+      font-size: 0.8em;
+      color: gray;
+    }
+
+    /* Flexbox for stats display */
+    .stat:hover {
+      background-color: #D3D3D3;
+      transform: scale(1.05);
+      transition: transform 0.3s;
+    }
+
+    /* Grid for displaying images */
+    .image-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+      margin: 30px 0;
+      width: 80%;
+    }
+
+    .image-grid img {
+      width: 100%;
+      border-radius: 8px;
+      transition: opacity 0.3s;
+    }
+
+    .image-grid img:hover {
+      opacity: 0.7;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Fitness Activity Tracker</h1>
+
+    <!-- Animated activity bars -->
+    <div class="activity-bar">
+      <div class="bar cardio" style="height: 120px;">Cardio - 40%</div>
+      <div class="bar strength" style="height: 180px;">Strength - 60%</div>
+      <div class="bar yoga" style="height: 90px;">Yoga - 30%</div>
+      <div class="bar running" style="height: 150px;">Running - 50%</div>
+    </div>
+
+    <!-- Fitness stats -->
+    <div class="stats"><!DOCTYPE html>
+      <html lang="en">
+      <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Fitness Activity Tracker</title>
+        <style>
+          /* Reset */
+          * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+          }
+          
+          /* Container for the whole page */
+          .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #f0f0f0;
+            min-height: 100vh;
+          }
+      
+          /* Animated flex bars for activity data */
+          .activity-bar {
+            display: flex;
+            justify-content: space-between;
+            width: 80%;
+            margin: 20px 0;
+          }
+      
+          .bar {
+            width: 22%;
+            text-align: center;
+            padding: 10px;
+            border-radius: 8px;
+            color: #fff;
+            transition: transform 2s;
+          }
+      
+          .cardio { background-color: #FF8C00; }
+          .strength { background-color: #32CD32; }
+          .yoga { background-color: #8A2BE2; }
+          .running { background-color: #DC143C; }
+      
+          /* Skew and rotate on hover */
+          .bar:hover {
+            transform: rotate(10deg) skew(10deg);
+          }
+      
+          /* Fitness stats */
+          .stats {
+            display: flex;
+            width: 80%;
+            justify-content: space-between;
+            margin-top: 50px;
+          }
+      
+          .stat {
+            width: 22%;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            text-align: center;
+            font-size: 1.5em;
+          }
+      
+          .stat p {
+            font-size: 0.8em;
+            color: gray;
+          }
+      
+          /* Flexbox for stats display */
+          .stat:hover {
+            background-color: #D3D3D3;
+            transform: scale(1.05);
+            transition: transform 0.3s;
+          }
+      
+          /* Grid for displaying images */
+          .image-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            margin: 30px 0;
+            width: 80%;
+          }
+      
+          .image-grid img {
+            width: 100%;
+            border-radius: 8px;
+            transition: opacity 0.3s;
+          }
+      
+          .image-grid img:hover {
+            opacity: 0.7;
+          }
+        </style>
+      </head>
+      <body>
+        <div class="container">
+          <h1>Fitness Activity Tracker</h1>
+      
+          <!-- Animated activity bars -->
+          <div class="activity-bar">
+            <div class="bar cardio" style="height: 120px;">Cardio - 40%</div>
+            <div class="bar strength" style="height: 180px;">Strength - 60%</div>
+            <div class="bar yoga" style="height: 90px;">Yoga - 30%</div>
+            <div class="bar running" style="height: 150px;">Running - 50%</div>
+          </div>
+      
+          <!-- Fitness stats -->
+          <div class="stats">
+            <div class="stat">
+              <span>2500</span>
+              <p>Steps Taken</p>
+            </div>
+            <div class="stat">
+              <span>30</span>
+              <p>Minutes Active</p>
+            </div>
+            <div class="stat">
+              <span>500</span>
+              <p>Calories Burned</p>
+            </div>
+          </div>
+      
+          <!-- Image grid for activity photos -->
+          <div class="image-grid">
+            <img src="1.jpg" alt="Cardio">
+            <img src="2.jpg" alt="Strength">
+            <img src="3.jpg" alt="Yoga">
+            <img src="4.jpg" alt="Running">
+            <img src="5.jpg" alt="Cycling">
+            <img src="6.jpg" alt="Swimming">
+          </div>
+        </div>
+      </body>
+      </html>
+      
+      <div class="stat">
+        <span>2500</span>
+        <p>Steps Taken</p>
+      </div>
+      <div class="stat">
+        <span>30</span>
+        <p>Minutes Active</p>
+      </div>
+      <div class="stat">
+        <span>500</span>
+        <p>Calories Burned</p>
+      </div>
+    </div>
+
+    <!-- Image grid for activity photos -->
+    <div class="image-grid">
+      <img src="1.jpg" alt="Cardio">
+      <img src="2.jpg" alt="Strength">
+      <img src="3.jpg" alt="Yoga">
+      <img src="4.jpg" alt="Running">
+      <img src="5.jpg" alt="Cycling">
+      <img src="6.jpg" alt="Swimming">
+    </div>
+  </div>
+</body>
+</html>

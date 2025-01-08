@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: 'Trebuchet MS';
+      background-color: #f4f4f4;
+      padding: 20px;
+    }
+
+    h1 {
+      color: brown;
+      text-align: center;
+    }
+
+    /* Ellipsis text overflow */
+    .text-ellipsis {
+      width: 300px;
+      border: 2px solid brown;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      margin: 10px auto;
+    }
+
+    .text-ellipsis:hover {
+      overflow: visible;
+    }
+
+    /* Clip text overflow */
+    .text-clip {
+      border: 2px solid brown;
+      width: 300px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: clip;
+      margin: 10px auto;
+    }
+
+    .text-clip:hover {
+      overflow: visible;
+    }
+
+    /* Vertical text */
+    .vert {
+      writing-mode: vertical-rl;
+      border: 2px solid brown;
+      width: 50px;
+      padding: 5px;
+      margin: 10px auto;
+    }
+
+    /* Word Wrap */
+    .wrap {
+      width: 150px;
+      overflow: hidden;
+      border: 2px solid brown;
+      word-wrap: break-word;
+      margin: 10px auto;
+    }
+  </style>
+  <title>CSS Text Properties Example</title>
+</head>
+<body>
+
+  <h1>CSS Text Properties</h1>
+
+  <!-- Ellipsis text overflow example -->
+  <div class="text-ellipsis">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vulputate erat ut quam facilisis, ac facilisis eros dictum.
+  </div>
+
+  <!-- Clip text overflow example -->
+  <div class="text-clip">
+    Vestibulum accumsan erat felis, non pretium magna hendrerit ac. Proin eleifend nibh ut feugiat faucibus. 
+  </div>
+
+  <!-- Vertical text example -->
+  <div class="vert">
+    Top Secret
+  </div>
+
+  <!-- Word Wrap example -->
+  <div class="wrap">
+    Aliquam erat volutpat. Nullam sed diam euismod, venenatis nisi ac, luctus sapien. Fusce suscipit augue vel odio vestibulum.
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    /* Basic Reset */
+    * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+      color: white;
+    }
+
+    body {
+      background-color: #111;
+      font-family: "Arial", sans-serif;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
+    /* Glow Text Effect for Heading */
+    h1 {
+      color: rgb(237, 237, 151);
+      text-shadow:
+        0 0 7px #fff,
+        0 0 10px #fff,
+        0 0 31px #fff,
+        0 0 55px rgb(255, 226, 4),
+        0 0 91px rgb(255, 226, 4),
+        0 0 100px rgb(255, 226, 4),
+        0 0 122px rgb(255, 226, 4),
+        0 0 140px rgb(255, 226, 4);
+      font-size: 70px;
+    }
+
+    /* Grid-based Box with Hover Effect */
+    .box {
+      display: grid;
+      width: 240px;
+      height: 240px;
+      margin: 50px;
+      background-color: rgba(55, 255, 5 ,0.5);
+      border-radius: 12px;
+      border: solid #6feb6f 4px;
+      transition: 2s;
+    }
+
+    .box:hover {
+      transform: rotateZ(60deg);
+      background-color: lightcoral;
+      opacity: 50%;
+    }
+
+    /* Transforming Letters */
+    .letters {
+      display: flex;
+      justify-content: center;
+      padding-top: 20px;
+      margin-bottom: 20px;
+      text-transform: uppercase;
+      font-size: 50px;
+      gap: 10px;
+    }
+
+    .letters p {
+      background-color: rgb(250, 150, 100);
+      width: 70px;
+      margin-right: 1.5px;
+      border-radius: 15%;
+      border-style: solid;
+      padding: 10px;
+    }
+
+    .letters:hover p:nth-child(even) {
+      transform: rotateY(360deg);
+      transition: 0.5s;
+    }
+
+    .letters:hover p:nth-child(odd) {
+      transform: rotateX(360deg);
+      transition: 1.5s;
+    }
+
+    /* Animated Skew and Rotate on Click */
+    .a {
+      margin: 30px;
+      transform: skewX(20deg);
+      transition: 5s;
+      cursor: pointer;
+    }
+
+    .a:hover {
+      transform: skewX(50deg);
+    }
+
+    .b {
+      margin: 100px;
+      transform: rotate(20deg);
+      transition: 5s;
+      cursor: pointer;
+    }
+
+    .b:hover {
+      transform: rotate(60deg);
+    }
+  </style>
+</head>
+<body>
+
+  <div>
+    <h1>Exploring the Universe</h1>
+
+    <div class="letters">
+      <p>S</p>
+      <p>p</p>
+      <p>a</p>
+      <p>c</p>
+      <p>e</p>
+    </div>
+
+    <div class="letters">
+      <p>E</p>
+      <p>x</p>
+      <p>p</p>
+      <p>l</p>
+      <p>o</p>
+      <p>r</p>
+      <p>e</p>
+    </div>
+
+    <div class="letters">
+      <p>C</p>
+      <p>o</p>
+      <p>s</p>
+      <p>m</p>
+      <p>o</p>
+      <p>s</p>
+    </div>
+
+    <!-- Interactive Boxes with Rotation -->
+    <div class="box"></div>
+
+    <div class="container">
+      <div class="a">A</div>
+      <div class="b">B</div>
+    </div>
+  </div>
+
+</body>
+</html>

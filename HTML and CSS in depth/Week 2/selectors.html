@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Delicious Diner</title>
+
+  <style>
+    * {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: #f5f5f5;
+      display: grid;
+      grid-template-rows: auto 1fr auto;
+      grid-template-columns: 1fr;
+      grid-template-areas: 
+        "header"
+        "main"
+        "footer";
+      height: 100vh;
+    }
+
+    header {
+      grid-area: header;
+      background-color: #ff6347;
+      text-align: center;
+      padding: 2rem;
+      color: white;
+    }
+
+    main {
+      grid-area: main;
+      padding: 2rem;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 1rem;
+    }
+
+    footer {
+      grid-area: footer;
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+    }
+
+    .menu-title {
+      font-size: 2rem;
+      color: #ff6347;
+      margin-bottom: 1rem;
+      text-transform: uppercase;
+      border-bottom: 2px solid #ff6347;
+      padding-bottom: 10px;
+    }
+
+    .menu-item {
+      background-color: white;
+      padding: 1rem;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .menu-item:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+
+    .menu-item h4 {
+      font-size: 1.5rem;
+      color: #333;
+    }
+
+    .menu-item p {
+      color: #777;
+      font-style: italic;
+      margin-top: 0.5rem;
+    }
+
+    .price {
+      font-weight: bold;
+      color: #ff6347;
+      font-size: 1.2rem;
+    }
+
+    .link {
+      text-decoration: none;
+      color: #ff6347;
+    }
+
+    /* Link states */
+    a:link {
+      color: blue;
+    }
+    a:visited {
+      color: purple;
+    }
+    a:hover {
+      color: green;
+    }
+    a:active {
+      color: white;
+      background-color: black;
+    }
+
+    .contact-form {
+      display: grid;
+      gap: 1rem;
+    }
+
+    .form-group {
+      display: flex;
+      flex-direction: column;
+    }
+
+    input, textarea {
+      padding: 1rem;
+      border: 2px solid #ccc;
+      border-radius: 4px;
+      font-size: 1rem;
+    }
+
+    .form-group label {
+      font-weight: bold;
+      margin-bottom: 0.5rem;
+    }
+
+    .form-group input[type="submit"] {
+      background-color: #ff6347;
+      color: white;
+      cursor: pointer;
+      border: none;
+      font-size: 1rem;
+    }
+
+    .form-group input[type="submit"]:hover {
+      background-color: #e55347;
+    }
+
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Delicious Diner</h1>
+  <p>Your go-to place for delicious food</p>
+  <a href="#menu" class="link">View our menu</a>
+</header>
+
+<main>
+  <section id="menu">
+    <div class="menu-title">Menu</div>
+
+    <div class="menu-item">
+      <h4>Cheese Burger</h4>
+      <p>A delicious cheese burger made with 100% beef, fresh vegetables, and a soft bun.</p>
+      <div class="price">$9.99</div>
+    </div>
+
+    <div class="menu-item">
+      <h4>Grilled Chicken Salad</h4>
+      <p>Fresh greens with grilled chicken, nuts, and a light dressing.</p>
+      <div class="price">$7.99</div>
+    </div>
+
+    <div class="menu-item">
+      <h4>Spaghetti Carbonara</h4>
+      <p>A rich and creamy pasta dish with bacon and parmesan cheese.</p>
+      <div class="price">$12.99</div>
+    </div>
+
+    <div class="menu-item">
+      <h4>Vegetable Stir Fry</h4>
+      <p>Mixed vegetables stir-fried with savory sauce and served with rice.</p>
+      <div class="price">$8.99</div>
+    </div>
+
+    <div class="menu-item">
+      <h4>Margherita Pizza</h4>
+      <p>Classic pizza topped with fresh tomatoes, mozzarella, and basil.</p>
+      <div class="price">$10.99</div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="menu-title">Contact Us</div>
+
+    <form action="#" class="contact-form">
+      <div class="form-group">
+        <label for="name">Your Name</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+      </div>
+
+      <div class="form-group">
+        <label for="email">Your Email</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+      </div>
+
+      <div class="form-group">
+        <label for="message">Your Message</label>
+        <textarea id="message" name="message" rows="4" placeholder="Write your message" required></textarea>
+      </div>
+
+      <div class="form-group">
+        <input type="submit" value="Send Message">
+      </div>
+    </form>
+  </section>
+</main>
+
+<footer>
+  <p>&copy; 2025 Delicious Diner | All Rights Reserved</p>
+  <a href="privacy.html" class="link">Privacy Policy</a> | 
+  <a href="terms.html" class="link">Terms of Service</a>
+</footer>
+
+</body>
+</html>

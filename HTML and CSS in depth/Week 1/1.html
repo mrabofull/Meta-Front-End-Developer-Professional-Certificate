@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Green Bistro</title>
+</head>
+<body>
+  <header>
+    <img src="greenbistro-logo.png" alt="Green Bistro logo">
+  </header>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="menu.html">Menu</a></li>
+      <li><a href="reservations.html">Reservations</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <main>
+    <h1>Welcome to Green Bistro</h1>
+    <video width="320" height="240" controls muted>
+      <source src="restaurant-video.mp4" type="video/mp4">
+    </video>
+    <p>Discover the finest flavors at Green Bistro. Whether you’re here for a casual lunch or an elegant dinner, we offer an unforgettable dining experience.</p>
+    <audio loop controls>
+      <source src="background-music.ogg" type="audio/ogg">
+    </audio>
+    <br><br>
+    <form>
+      <div>
+        <label for="feedback">Feedback</label>
+        <input type="range" name="feedback" id="feedback" min="1" max="5" list="feedbacks">
+        <datalist id="feedbacks">
+          <option value="1" label="1"></option>
+          <option value="2"></option>
+          <option value="3"></option>
+          <option value="4"></option>
+          <option value="5" label="5"></option>
+        </datalist>
+      </div>
+      <button type="submit">Submit Feedback</button>
+    </form>
+    <br><br>
+
+    <iframe src="gallery-placeholder.png" width="320" height="128" sandbox allow="payment 'none';camera 'none';microphone 'none'"></iframe>
+  </main>
+  <footer>
+    <p>Copyright Green Bistro</p>
+  </footer>
+</body>
+</html>

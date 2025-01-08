@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    /* Basic CSS Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* Centering the canvas */
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #f0f0f0; /* Light background color */
+      font-family: Arial, sans-serif; /* Default font */
+    }
+
+    canvas {
+      border: 2px solid #333; /* Dark border around the canvas */
+      background-color: #fff; /* White background inside the canvas */
+    }
+  </style>
+</head>
+<body>
+  <canvas width="640" height="480" id="my_canvas"></canvas>
+
+  <script>
+    let canvas = document.getElementById("my_canvas");
+    let context = canvas.getContext("2d");
+
+    const speed = 4;
+    let position = 0;
+    let moveSpeed = speed;
+    let size = 40;
+
+    function moveSquare() {
+      if (position + size > 640) {
+        moveSpeed = -speed;
+      } else if (position < 0) {
+        moveSpeed = speed;
+      }
+      position += moveSpeed;
+    }
+
+    function drawSquare() {
+      context.clearRect(0, 0, 640, 480);
+
+      context.fillStyle = "#7f6262"; // Color of the square
+      context.fillRect(position, 50, size, size); // Draw square at (position, 50) with width and height of 'size'
+    }
+
+    function animate() {
+      moveSquare();
+      drawSquare();
+      window.requestAnimationFrame(animate);
+    }
+
+    window.requestAnimationFrame(animate);
+  </script>
+</body>
+</html>
